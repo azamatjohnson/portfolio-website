@@ -1,4 +1,4 @@
-import { useEffect, useMemo } from 'react'
+import { useEffect, useLayoutEffect, useMemo } from 'react'
 import { useSelector } from 'react-redux'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import CssBaseline from '@mui/material/CssBaseline'
@@ -19,9 +19,20 @@ import { ScrollToTop } from './components/ScrollToTop'
 export const App = () => {
   const mode = useSelector((state) => state.theme)
   const theme = useMemo(() => createTheme(themeSettings(mode)), [mode])
+
   useEffect(() => {
     document.body.className = mode === 'dark' ? 'dark' : 'light'
   }, [mode])
+
+  useLayoutEffect(() => {
+    const loader = document.getElementById('loader')
+    setTimeout(() => {
+      loader.classList.add('loaded')
+      setTimeout(() => {
+        document.body.removeChild(loader)
+      }, 300)
+    }, 2000)
+  }, [])
 
   return (
     <ThemeProvider theme={theme}>
