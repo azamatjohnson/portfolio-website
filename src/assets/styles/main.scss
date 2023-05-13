@@ -187,10 +187,6 @@ body.dark {
     filter: invert(1);
   }
 
-  .home__social-link {
-    color: var(--title-color);
-  }
-
   .section__border {
     border-color: hsl(207, 4%, 32%);
   }
@@ -335,7 +331,6 @@ body.dark {
     column-gap: 1.5rem;
     row-gap: 4rem;
     padding-top: 1rem;
-
   }
 
   &__data {
@@ -1234,7 +1229,8 @@ body.dark {
       height: 520px;
       border-radius: 10.6rem;
 
-      img {}
+      img {
+      }
     }
 
     &__shape-waves {

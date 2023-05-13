@@ -34,21 +34,21 @@ export const Home = () => {
                 href="https://github.com/azamatjohnson"
                 target="_blank"
               >
-                <i className="ri-github-line"></i>
+                <i className="ri-github-fill"></i>
               </a>
               <a
                 className="home__social-link"
                 href="https://t.me/azamatjohnson"
                 target="_blank"
               >
-                <i className="ri-telegram-line"></i>
+                <i className="ri-telegram-fill"></i>
               </a>
               <a
                 className="home__social-link"
                 href="https://www.instagram.com/azamatjohnson"
                 target="_blank"
               >
-                <i className="ri-instagram-line"></i>
+                <i className="ri-instagram-fill"></i>
               </a>
             </ul>
           </div>
