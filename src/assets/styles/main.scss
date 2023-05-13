@@ -190,6 +190,19 @@ body.dark {
   .section__border {
     border-color: hsl(207, 4%, 32%);
   }
+
+  .skills {
+
+    &__content:nth-child(1) {
+      .skills__info {
+        .skills__data:nth-child(7) {
+          img {
+            filter: invert(1);
+          }
+        }
+      }
+    }
+  }
 }
 
 /* =============== REUSABLE CSS CLASSES =============== */
